@@ -1,0 +1,750 @@
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: url("img/lucia.jpg") top right;
+    background-size: cover;
+    position: relative;
+    font-family: 'Satisfy', cursive;
+    /* Menggunakan font dari Google Fonts */
+  
+  }
+  
+  #hero:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.65);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  #hero .hero-container {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 15px;
+    color: white;
+  }
+  
+  
+  
+  #hero h1 {
+    margin: 0 0 50px 0;
+    font-size: 64px;
+    font-family: "Satisfy", serif;
+    color: #fff;
+  }
+  
+  #hero h2 {
+    color: #eee;
+    margin-bottom: 50px;
+    font-size: 30px;
+    /* Sesuaikan ukuran teks sesuai kebutuhan */
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  #hero .btn-scroll {
+    transition: 0.4s;
+    color: rgba(255, 255, 255, 0.6);
+    animation: up-down 1s ease-in-out infinite alternate-reverse both;
+  }
+  
+  #hero .btn-scroll i {
+    font-size: 48px;
+  }
+  
+  #hero .btn-scroll:hover {
+    color: #ffb727;
+  }
+  
+  @media (min-width: 1024px) {
+    #hero {
+      background-attachment: fixed;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    #hero h1 {
+      font-size: 40px;
+    }
+  
+    #hero h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+  
+  @keyframes up-down {
+    0% {
+      transform: translateY(5px);
+    }
+  
+    100% {
+      transform: translateY(-5px);
+    }
+  }
+  
+  /* CSS untuk Header Transparan */
+  
+  /* CSS untuk Menu Navigation */
+  nav {
+    display: flex;
+    justify-content: center;
+    /* Menengahkan menu */
+    align-items: center;
+  }
+  
+  /* CSS untuk Link Menu (Diperbarui untuk warna yang sesuai) */
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0 15px;
+    padding: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  /* Efek warna ketika menu diklik */
+  nav a:hover {
+    color: yellow;
+  }
+  
+  .nav-header a img {
+    float: right;
+  }
+  
+  /* Warna latar menu setelah di-scroll */
+  header.scrolled {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Sesuaikan dengan warna latar yang diinginkan */
+  }
+  
+  #header {
+    z-index: 997;
+    transition: all 0.5s;
+    height: 80px;
+    background: rgba(25, 28, 31, 0.8);
+  }
+  
+  #header.header-transparent {
+    background: transparent;
+  }
+  
+  #header.header-scrolled {
+    height: 60px;
+    background: rgba(25, 28, 31, 0.8);
+  }
+  
+  /* CSS untuk Konten Halaman (Sesuaikan dengan struktur HTML Anda) */
+  .content {
+    margin-top: 60px;
+    /* Sesuaikan dengan tinggi header Anda */
+    padding: 20px;
+  }
+  
+  /* ... (kode sebelumnya tetap sama) */
+  
+  
+  
+  
+  
+  
+  
+  
+  /* ... (kode lainnya tetap sama) */
+  .instrument-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    overflow: hidden;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .instrument-section h1 {
+    font-size: 55px;
+    margin-bottom: 70px;
+    font-family: "Raleway", sans-serif;
+  
+  }
+  
+  .instrument-section .instrument-item {
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    padding-bottom: 50px;
+    cursor: pointer;
+  }
+  
+  .instrument-section .instrument-item img {
+    flex-grow: 1;
+    margin-bottom: 30px;
+    position: relative;
+    top: 0;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+  }
+  
+  .instrument-section .instrument-item .instrument-thumbnail {
+    margin-bottom: 30px;
+    position: relative;
+    top: 0;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+  }
+  
+  .instrument-section .instrument-item h3 {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  
+  .instrument-section .instrument-item strong {
+    font-weight: 800 !important;
+    font-size: 18px !important;
+  }
+  
+  .instrument-section .instrument-item h3,
+  .instrument-section .instrument-item strong {
+    color: #2f2f2f;
+    text-decoration: none;
+  }
+  
+  .instrument-section .instrument-item .icon-cross {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    background: #2f2f2f;
+    bottom: 15px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin-bottom: -17.5px;
+    border-radius: 50%;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+  }
+  
+  .instrument-section .instrument-item .icon-cross img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  .instrument-section .instrument-item:before {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    content: "";
+    background: #dce5e4;
+    height: 0%;
+    z-index: -1;
+    border-radius: 10px;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+  }
+  
+  .instrument-section .instrument-item:hover .instrument-thumbnail {
+    top: -25px;
+  }
+  
+  .instrument-section .instrument-item:hover .icon-cross {
+    bottom: 0;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .instrument-section .instrument-item:hover:before {
+    height: 70%;
+  }
+  
+  .why-choose-section {
+    padding: 7rem 0;
+  }
+  
+  .why-choose-section .img-wrap {
+    position: relative;
+  }
+  
+  .why-choose-section .img-wrap:before {
+    position: absolute;
+    content: "";
+    width: 255px;
+    height: 217px;
+    background-image: url("../images/dots-yellow.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    -webkit-transform: translate(-40%, -40%);
+    -ms-transform: translate(-40%, -40%);
+    transform: translate(-40%, -40%);
+    z-index: -1;
+  }
+  
+  .why-choose-section .img-wrap img {
+    border-radius: 20px;
+  }
+  
+  .feature {
+    margin-bottom: 30px;
+  }
+  
+  .feature .icon {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .feature .icon:before {
+    content: "";
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    background: rgba(59, 93, 80, 0.2);
+    border-radius: 50%;
+    right: -8px;
+    bottom: 0;
+  }
+  
+  .feature h3 {
+    font-size: 14px;
+    color: #2f2f2f;
+  }
+  
+  .feature p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #6a6a6a;
+  }
+  
+  .we-help-section {
+    padding: 7rem 0;
+  }
+  
+  .we-help-section .imgs-grid {
+    display: grid;
+    grid-template-columns: repeat(27, 1fr);
+    position: relative;
+  }
+  
+  .we-help-section .imgs-grid:before {
+    position: absolute;
+    content: "";
+    width: 255px;
+    height: 217px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-transform: translate(-40%, -40%);
+    -ms-transform: translate(-40%, -40%);
+    transform: translate(-40%, -40%);
+    z-index: -1;
+  }
+  
+  .we-help-section .imgs-grid .grid {
+    position: relative;
+  }
+  
+  .we-help-section .imgs-grid .grid img {
+    border-radius: 20px;
+    max-width: 100%;
+  }
+  
+  .we-help-section .imgs-grid .grid.grid-1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 18;
+    grid-column: 1 / span 18;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 27;
+    grid-row: 1 / span 27;
+  }
+  
+  .we-help-section .imgs-grid .grid.grid-2 {
+    -ms-grid-column: 19;
+    -ms-grid-column-span: 27;
+    grid-column: 19 / span 27;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 5;
+    grid-row: 1 / span 5;
+    padding-left: 20px;
+  }
+  
+  .we-help-section .imgs-grid .grid.grid-3 {
+    -ms-grid-column: 14;
+    -ms-grid-column-span: 16;
+    grid-column: 14 / span 16;
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 27;
+    grid-row: 6 / span 27;
+    padding-top: 20px;
+  }
+  
+  .custom-list {
+    width: 100%;
+  }
+  
+  .custom-list li {
+    display: inline-block;
+    width: calc(50% - 20px);
+    margin-bottom: 12px;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  .custom-list li:before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 2px solid #3b5d50;
+    position: absolute;
+    left: 0;
+    top: 8px;
+  }
+  
+  
+  /* Import Google font - Poppins */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+  
+  
+  .wrapper .carousel .carousel-item {
+    height: 340px;
+    object-fit: cover;
+    user-select: none;
+    margin-left: 14px;
+    max-width: 300px;
+    width: calc(100% / 3);
+    justify-content: center;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: #dcdcdc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carousel .carousel-item:first-child {
+    margin-left: 0;
+  }
+  
+  
+  
+  /* Tambahan untuk memperbaiki margin pada img pertama */
+  
+  
+  .wrapper {
+    display: flex;
+    max-width: 80%;
+    position: relative;
+    margin-left: 140px;
+  }
+  
+  .wrapper i {
+    top: 50%;
+    height: 44px;
+    width: 44px;
+    color: #343F4F;
+    cursor: pointer;
+    font-size: 1.15rem;
+    position: absolute;
+    text-align: center;
+    line-height: 44px;
+    background: #fff;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+  }
+  
+  .wrapper i:active {
+    transform: translateY(-50%) scale(0.9);
+  }
+  
+  .wrapper i:hover {
+    background: #f2f2f2;
+  }
+  
+  .wrapper i:first-child {
+    left: -22px;
+    display: none;
+  }
+  
+  .wrapper i:last-child {
+    right: -22px;
+  }
+  
+  .wrapper .carousel {
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+  }
+  
+  .carousel.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+  }
+  
+  
+  @media screen and (max-width: 900px) {
+    .carousel img {
+      width: calc(100% / 2);
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .carousel img {
+      width: 100%;
+    }
+  }
+  
+  #left.fa-solid.fa-angle-left {
+    margin-left: -60px;
+  }
+  
+  #right.fa-solid.fa-angle-right {
+    margin-right: -60px;
+  }
+  
+  /* Gaya Umum */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .text-main {
+    text-align: center;
+    margin-left: 340px;
+    margin-bottom: 100px;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  .text-second {
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+  
+  /* Gaya Produk */
+  section.products-section {
+    background: linear-gradient(180deg, rgba(53, 133, 166, 0.5) 0%, rgba(28, 71, 89, 0.25) 100%);
+    min-height: 573px;
+    padding: 70px 0 60px 0;
+  }
+  
+  section .title-product h2 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+  }
+  
+  .text-products .text-show-all a {
+    display: inline-block;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 76%);
+    font-size: 19px;
+  }
+  
+  section .products {
+    padding-bottom: 70px;
+  }
+  
+  section .product>div {
+    border-radius: 10px;
+    box-shadow: 0px 12px 24px rgba(84, 116, 129, 0.29);
+  }
+  
+  section .product .desc-product {
+    text-align: center;
+    padding: 12px 50px;
+  }
+  
+  .product .desc-product a {
+    color: inherit;
+  }
+  
+  .product .desc-product p:first-child {
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: normal;
+    margin-bottom: 10px;
+  }
+  
+  .product .desc-product p:last-child {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    margin-bottom: 10px;
+    color: #1C4759;
+  }
+  
+  /* Responsive Mobile */
+  @media screen and (max-width: 575.98px) {
+    /* Gaya Responsif Mobile */
+    /* ... */
+  }
+  
+  /* Responsive Tablet */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    /* Gaya Responsif Tablet */
+    /* ... */
+  }
+  
+  .vertical-slide {
+    flex-direction: column;
+    /* Mengatur tata letak menjadi kolom (vertical) */
+  }
+  
+  .vertical-slide .product-image {
+    margin-bottom: 10px;
+    /* Memberikan ruang di antara gambar dan deskripsi */
+  }
+  
+  .product .product-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel .products {
+    align-items: center;
+  }
+  
+  .cards-wrapper {
+    display: flex;
+  }
+  
+  .card {
+    border: none;
+    margin-right: 10px;
+  }
+  
+  
+  .image-wrapper {
+    height: 20vw;
+    display: flex;
+    margin: 0 auto;
+  }
+  
+  .image-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  
+  .carousel-control-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-70%);
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateX(70%);
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .carousel-control-prev {
+    left: 0;
+  }
+  
+  .carousel-control-next {
+    right: 0;
+  }
+  
+  
+  
+  .carousel-control-prev .carousel-control-prev-icon,
+  .carousel-control-next .carousel-control-next-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #ffb727;
+  }
+
+  hr{
+    border: 2px solid black;
+    margin: 10px 0;
+}
+  
+  #hero1 {
+    height: 450px;
+    background: url("img/imgabout.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+    
+  
+  }
+  
+  #hero1::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  
+  #hero1 .hero1-container {
+    position: absolute;
+    bottom: 0;
+    top: 100px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 15px;
+    color: white;
+    text-align: center;
+  }
+  
+  #hero1 h1 {
+    margin: 0 0 15px 0;
+    font-size: 45px;
+    color: #FFFFFF;
+  }
+  #hero1 h2 {
+    margin: 0;
+    font-size: 50px;
+    text-shadow: 8px 8px 10px rgba(26, 25, 24, 0.8);
+    color: #E9E8E8;
+    font-weight: bold;
+    font-family: 'Anton', sans-serif;
+  }
+  
